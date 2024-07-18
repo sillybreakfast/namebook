@@ -1,0 +1,107 @@
+@font-face {
+    font-family: "light";
+    src: url("/fonts/Basiic Sans 12pt.ttf");
+}
+
+@font-face {
+    font-family: "regular";
+    src: url("/fonts/Basiic Sans 18pt.ttf");
+}
+
+@font-face {
+    font-family: "bold";
+    src: url("/fonts/Basiic Style Sans.ttf");
+}
+
+@font-face {
+    font-family: "home video";
+    src: url("/fonts/HomeVideo.ttf");
+}
+
+@font-face {
+    font-family: "home video bold";
+    src: url("/fonts/HomeVideoBold.ttf");
+}
+
+:root {
+    --primary: #ff14ff;
+    --secondary: #fff9f1;
+    --font-size: 1.2rem;
+}
+
+body {
+    background-color: var(--secondary);
+    font-family: "light", monospace;
+    font-size: var(--font-size);
+    color: var(--primary);
+    margin: 3rem;
+}
+
+.primary {
+    color: var(--primary);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "home video bold";
+    margin-bottom: 0;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+::selection {
+    background-color: var(--primary);
+    color: var(--secondary);
+}
+
+button,
+.button,
+input {
+    width: auto;
+    font-size: var(--font-size);
+    padding: 0.25rem 0.65rem;
+    font-family: inherit;
+    color: var(--primary);
+    border: none;
+    outline: var(--primary) 0.08rem solid;
+    text-decoration: none;
+    background-color: var(--secondary);
+}
+
+form {
+    width: 200px;
+}
+
+input {
+    margin: 4px;
+}
+
+button,
+.button,
+input[type="submit"] {
+    cursor: pointer;
+    display: inline-block;
+}
+
+button:hover,
+.button:hover,
+input[type="submit"]:hover {
+    color: var(--secondary);
+    background-color: var(--primary);
+}
+
+a {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+hr {
+    color: var(--primary);
+    border-style: solid;
+}
